@@ -1,5 +1,5 @@
 {
-    "name": "@mirkorg/aether",
+    "name": "@mirkobrombin/aether",
     "publishConfig": {
       "registry": "https://npm.pkg.github.com",
       "access": "public"
@@ -21,6 +21,6 @@
         "deduping",
         "retry"
     ],
-    "author": "mirkorg",
+    "author": "mirkobrombin",
     "license": "MIT"
 }

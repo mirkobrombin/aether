@@ -15,14 +15,14 @@ Aether is a modern, adapter-based async client designed for high-performance UI 
 ## Installation
 
 ```bash
-npm install @mirkorg/aether
+npm install @mirkobrombin/aether
 ```
 
 ## Usage
 
 ### Basic HTTP
 ```javascript
-import { Aether, FetchAdapter } from "@mirkorg/aether";
+import { Aether, FetchAdapter } from "@mirkobrombin/aether";
 
 const api = new Aether({
   adapter: new FetchAdapter(),
@@ -36,8 +36,8 @@ const user = await api.get("/users/1");
 Aether integrates natively with `warp-store` to manage global state reactively.
 
 ```javascript
-import { Aether } from "@mirkorg/aether";
-import { warpStore } from "@mirkorg/warp-store";
+import { Aether } from "@mirkobrombin/aether";
+import { warpStore } from "@mirkobrombin/warp-store";
 
 const api = new Aether({ baseURL: "https://api.example.com" });
 
@@ -54,7 +54,7 @@ console.log(warpStore.get("currentUser"));
 
 ### WebSocket / RPC
 ```javascript
-import { Aether, WebSocketAdapter } from "@mirkorg/aether";
+import { Aether, WebSocketAdapter } from "@mirkobrombin/aether";
 
 const rpc = new Aether({
   adapter: new WebSocketAdapter({ socket: mySocket })

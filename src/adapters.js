@@ -33,6 +33,7 @@ export class FetchAdapter extends Adapter {
                     ...headers,
                 },
                 signal: signal || controller.signal,
+                credentials: config.credentials || 'include',
             };
 
             if (body && (method === 'POST' || method === 'PUT' || method === 'PATCH')) {
