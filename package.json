@@ -1,0 +1,26 @@
+{
+    "name": "@mirkorg/aether",
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com",
+      "access": "public"
+    },
+    "version": "1.0.0",
+    "description": "The Universal Async Client - Adapter-based fetching with automatic deduplication, retries integration.",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "fetch",
+        "http",
+        "websocket",
+        "rpc",
+        "warp",
+        "async",
+        "deduping",
+        "retry"
+    ],
+    "author": "mirkorg",
+    "license": "MIT"
+}
